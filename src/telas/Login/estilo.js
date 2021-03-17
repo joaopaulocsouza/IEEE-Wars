@@ -20,18 +20,18 @@ export const CustomButton = styled.TouchableOpacity`
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 50;
+    height: 50px;
     background-color: #B81F00;
-    border-radius: 5;
-    margin-bottom: 30;
+    border-radius: 5px;
+    margin-bottom: 30px;
 `
 
 export const LoginInput = styled.View`
     border: 1px solid #dcdcdc
     align-items: center
     width: 80%
-    border-radius : 5
-    margin-bottom: 30
+    border-radius : 5px
+    margin-bottom: 30px
     padding-left: 15px
     flex-direction: row
     height: 50px
@@ -48,7 +48,7 @@ export const CustomButtonText = styled.Text`
 `
 export const Cadastro = styled.TouchableOpacity`
     flex-direction: row
-    margin-bottom: 15
+    margin-bottom: 15px
 `
 
 export const CadastroText = styled.Text`

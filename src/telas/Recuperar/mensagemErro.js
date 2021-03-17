@@ -15,7 +15,7 @@ export default () => {
         <Container>
             <Navbar Nome={"Recuperar Senha"}/>
 
-            <Erro height="50" width="50" fill="red" style={{marginBottom: 20}} />
+            <Erro height="50px" width="50px" fill="red" style={{marginBottom: 20}} />
             <MensagemText>Sua solicitação não pode ser atendida! verifique os dados informados e tente novamente.</MensagemText>
             <RecuperarBotao onPress={btnTenteNovamenteAtivo}>
                 <RecuperarBotaoTexto>

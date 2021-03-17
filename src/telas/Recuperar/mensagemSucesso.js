@@ -15,7 +15,7 @@ export default () => {
         <Container>
             <Navbar Nome={"Recuperar Senha"}/>
 
-            <Success height="50" width="50" fill="green" style={{marginBottom: 20}} />
+            <Success height="50px" width="50px" fill="green" style={{marginBottom: 20}} />
             <MensagemText>Sua solicitação foi recebida com sucesso, acesse seu email para concluir a recuperação da senha!</MensagemText>
             <RecuperarBotao onPress={btnRetornarAtivo}>
                 <RecuperarBotaoTexto>

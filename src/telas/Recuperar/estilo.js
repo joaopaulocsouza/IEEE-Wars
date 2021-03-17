@@ -14,8 +14,8 @@ export const RecuperarInput = styled.View`
     width: 80%
     margin-bottom: 30px
     padding-left: 15px 
-    border-radius: 5
-    height: 50
+    border-radius: 5px
+    height: 50px
 `
 
 export const RecuperarTexto = styled.TextInput`
@@ -26,8 +26,8 @@ export const RecuperarBotao = styled.TouchableOpacity`
     width: 80%
     justify-content: center
     align-items: center
-    height: 50
-    border-radius: 5
+    height: 50px
+    border-radius: 5px
     background-color: #B81F00
     
 `

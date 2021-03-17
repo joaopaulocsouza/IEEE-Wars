@@ -20,6 +20,7 @@ import { useNavigation } from '@react-navigation/core';
 
 export default () => {
 
+    const ver = useState('')
     const navegacao = useNavigation();
     const [recebeUser, setUser] = useState('');
     const [recebeSenha, setSenha] = useState('');
@@ -33,8 +34,21 @@ export default () => {
     }
 
     const botaoEntrarAtivo = () =>{
-        navegacao.navigate("Inicio")
+        if(recebeUser === '' && recebeSenha === ''){
+            alert('Preencha os campos')
+        }else{
+            if(recebeUser == 'Juomzin' && recebeSenha == '10'){
+                navegacao.reset({
+                    routes: [{name: 'Inicio'}]
+                })
+            }else{
+                this.setState = ({
+                    ver: 1
+                });
+            }
+        }
     }
+
 
     return(
         <Container>
@@ -44,14 +58,14 @@ export default () => {
             </View>
 
             <InputArea>
-                <LoginInput value={recebeUser} onChangeText={t=>setUser(t)} >
+                <LoginInput>
                     <User height="24" width="24" fill="#acacac" />
-                    <LoginText placeholder="Usuário" />
+                    <LoginText placeholder="Usuário" value={recebeUser} onChangeText={t=>setUser(t)}/>
                 </LoginInput>
 
-                <LoginInput value={recebeSenha} onChangeText={t=>setSenha(t)} >
+                <LoginInput >
                     <Cadeado height="24" width="24" fill="#acacac" />
-                    <LoginText  placeholder="Senha" secureTextEntry={true}/>
+                    <LoginText  placeholder="Senha" secureTextEntry={true} value={recebeSenha} onChangeText={t=>setSenha(t)}/>
                     {/* <TouchableOpacity>
                         <Olho height="24" width="24" fill="#acacac" />
                     </TouchableOpacity> */}
