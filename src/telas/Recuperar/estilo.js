@@ -20,6 +20,7 @@ export const RecuperarInput = styled.View`
 
 export const RecuperarTexto = styled.TextInput`
     margin-left: 10px
+    color: #acacac
 `
 
 export const RecuperarBotao = styled.TouchableOpacity`

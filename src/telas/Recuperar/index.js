@@ -18,7 +18,7 @@ export default () => {
 
     const btnRecuperarAtivo = () => {
         if(emailUser != '' && nomeUser != '' && numeroUser != ''){
-            if(nomeUser == 'Joao Paulo' && emailUser == "Juomzingameplays@gmail.com" && numeroUser == 10){
+            if(nomeUser == 'Joao Paulo' && emailUser == "juomzingameplays@gmail.com" && numeroUser == 10){
                 navegacao.navigate('mensagemSucessoRecuperar')
             }else{
                 navegacao.navigate('mensagemErroRecuperar')
@@ -36,15 +36,15 @@ export default () => {
             <Navbar Nome={"Recuperar Senha"} />          
 
             <RecuperarInput>
-                <RecuperarTexto placeholder="Nome" value={nomeUser} onChangeText={t=>setNome(t)}/>
+                <RecuperarTexto placeholder="Nome" placeholderTextColor="#acacac" value={nomeUser} onChangeText={t=>setNome(t)}/>
             </RecuperarInput>
 
             <RecuperarInput>
-                <RecuperarTexto placeholder="Email"  value={emailUser} onChangeText={t=>setEmail(t)} />
+                <RecuperarTexto placeholder="Email" placeholderTextColor="#acacac"  value={emailUser} onChangeText={t=>setEmail(t)} />
             </RecuperarInput>
 
             <RecuperarInput>
-                <RecuperarTexto placeholder="Número de Matrícula"  value={numeroUser} onChangeText={t=>setNumero(t)} />
+                <RecuperarTexto placeholder="Número de Matrícula" placeholderTextColor="#acacac"  value={numeroUser} onChangeText={t=>setNumero(t)} />
             </RecuperarInput>
 
             <RecuperarBotao onPress={btnRecuperarAtivo}>

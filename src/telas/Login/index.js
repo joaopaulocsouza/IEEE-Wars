@@ -60,12 +60,12 @@ export default () => {
             <InputArea>
                 <LoginInput>
                     <User height="24" width="24" fill="#acacac" />
-                    <LoginText placeholder="Usuário" value={recebeUser} onChangeText={t=>setUser(t)}/>
+                    <LoginText placeholder="Usuário"  placeholderTextColor="#acacac" value={recebeUser} onChangeText={t=>setUser(t)}/>
                 </LoginInput>
 
                 <LoginInput >
                     <Cadeado height="24" width="24" fill="#acacac" />
-                    <LoginText  placeholder="Senha" secureTextEntry={true} value={recebeSenha} onChangeText={t=>setSenha(t)}/>
+                    <LoginText  placeholder="Senha" placeholderTextColor="#acacac" secureTextEntry={true} value={recebeSenha} onChangeText={t=>setSenha(t)}/>
                     {/* <TouchableOpacity>
                         <Olho height="24" width="24" fill="#acacac" />
                     </TouchableOpacity> */}
