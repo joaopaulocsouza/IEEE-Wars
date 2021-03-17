@@ -15,7 +15,9 @@ export default () => {
             if(token !== null){
 
             }else{
-                navegation.navigate('Login');
+                navegation.reset({
+                    routes: [{name: 'Login'}]
+                })
             }
         }
         checkToken();
