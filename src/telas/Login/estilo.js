@@ -8,7 +8,7 @@ export const Container = styled.SafeAreaView`
     background-color: #211F1C;
     color: #DCDCDC;
     width: 100%
-`;
+`
 
 export const InputArea = styled.View`
     width: 100%
@@ -22,7 +22,7 @@ export const CustomButton = styled.TouchableOpacity`
     width: 80%;
     height: 50;
     background-color: #B81F00;
-    borderRadius: 5;
+    border-radius: 5;
     margin-bottom: 30;
 `
 
@@ -30,7 +30,7 @@ export const LoginInput = styled.View`
     border: 1px solid #dcdcdc
     align-items: center
     width: 80%
-    borderRadius : 5
+    border-radius : 5
     margin-bottom: 30
     padding-left: 15px
     flex-direction: row

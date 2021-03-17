@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Text, TextInput, View } from 'react-native'
+import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { 
     Container,
     InputArea,
@@ -15,12 +15,26 @@ import Logo from '../../assets/Logo.svg'
 import User from '../../assets/icons/user.svg'
 import Cadeado from '../../assets/icons/locked.svg'
 import Olho from '../../assets/icons/view.svg'
+import constructor from 'react'
+import { useNavigation } from '@react-navigation/core';
 
 export default () => {
 
-    const [recebeUser, setUser] = useState('')
-    const [recebeSenha, setSenha] = useState('')
+    const navegacao = useNavigation();
+    const [recebeUser, setUser] = useState('');
+    const [recebeSenha, setSenha] = useState('');
 
+    const botaoCadastroAtivo = () => {
+        navegacao.navigate("Cadastro")
+    }
+
+    const botaoRecuperarAtivo = () => {
+        navegacao.navigate("Recuperar")
+    }
+
+    const botaoEntrarAtivo = () =>{
+        navegacao.navigate("Inicio")
+    }
 
     return(
         <Container>
@@ -35,22 +49,24 @@ export default () => {
                     <LoginText placeholder="Usuário" />
                 </LoginInput>
 
-                <LoginInput value={recebeSenha} onChangeText={t=>setUser(t)} >
+                <LoginInput value={recebeSenha} onChangeText={t=>setSenha(t)} >
                     <Cadeado height="24" width="24" fill="#acacac" />
-                    <LoginText placeholder="Senha" secureTextEntry={true}/>
-                    <Olho height="24" width="24" fill="#acacac" />
+                    <LoginText  placeholder="Senha" secureTextEntry={true}/>
+                    {/* <TouchableOpacity>
+                        <Olho height="24" width="24" fill="#acacac" />
+                    </TouchableOpacity> */}
                 </LoginInput>
 
-                <CustomButton>
+                <CustomButton onPress={botaoEntrarAtivo}>
                     <CustomButtonText>Entrar</CustomButtonText>
                 </CustomButton>
 
-                <Cadastro>
+                <Cadastro onPress={botaoCadastroAtivo} >
                     <CadastroText>Ainda não é cadastrado? </CadastroText>
                     <CadastroButton>Cadastre-se</CadastroButton>
                 </Cadastro>
 
-                <Cadastro>
+                <Cadastro onPress={botaoRecuperarAtivo}>
                     <CadastroButton>Recuperar Senha</CadastroButton>
                 </Cadastro>
 
