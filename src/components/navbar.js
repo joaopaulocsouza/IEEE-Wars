@@ -14,7 +14,7 @@ export default ({Nome}) => {
     return(
         <Navbar>
             <BotaoVoltar onPress={botaoVoltarPressionado}>
-                <Seta height="24" width="24" fill="#dcdcdc" stroke="#dcdcdc"/>
+                <Seta height="24px" width="24px" fill="#dcdcdc" stroke="#dcdcdc"/>
             </BotaoVoltar>
             <NavbarText>
                 {Nome}
@@ -31,7 +31,10 @@ const Navbar = styled.SafeAreaView`
     align-items: center
     height: 60px
     flex-direction: row
-    box-shadow: 10px 10px 100px gold;
+    shadow-color: #000
+    shadow-opacity: 0.39
+    shadow-radius: 5.30px
+    elevation: 13
     justify-content: space-between
     padding: 20px
     position: absolute
@@ -52,6 +55,6 @@ const BotaoVoltar = styled.TouchableOpacity`
 const TextDir = styled.Text`
     color: #211f1c
     margin-right: 10px
-    height: 24
-    width: 24
+    height: 24px
+    width: 24px
 `
