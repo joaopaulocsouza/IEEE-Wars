@@ -16,7 +16,7 @@ export default () => {
 
             }else{
                 navegation.reset({
-                    routes: [{name: 'Login'}]
+                    routes: [{name: 'NavBottom'}]
                 })
             }
         }

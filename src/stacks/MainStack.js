@@ -11,6 +11,9 @@ import mensagemErroRecuperar from '../telas/Recuperar/mensagemErro'
 import NavBottom from '../components/NavBottom'
 import RankingIndividual from '../telas/Ranking/RankingIndividual'
 import RankingProjetos from '../telas/Ranking/RankingProjeto'
+import EnviarPics from '../telas/Pics/enviar'
+import mensagemSucessoPics from '../telas/Pics/enviar/mensagemSucesso'
+import NavPics from '../telas/Pics/historico/NavPics'
 
 const Stack = createStackNavigator();
 
@@ -29,6 +32,10 @@ export default () => (
         <Stack.Screen name="Pics" component={Pics} />
         <Stack.Screen name="RankingIndividual" component={RankingIndividual} />
         <Stack.Screen name="RankingProjetos" component={RankingProjetos} />
+        <Stack.Screen name="EnviarPics" component={EnviarPics} />
+        <Stack.Screen name="mensagemSucessoPics" component={mensagemSucessoPics} />
+        <Stack.Screen name="NavPics" component={NavPics} />
+        
     </Stack.Navigator>
     
 )
