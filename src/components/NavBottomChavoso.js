@@ -44,11 +44,8 @@ const Nav = styled.View`
     width: 100%
     flex-direction: row
     padding-top: 5px
-    shadow-color: #000
-    shadow-opacity: 0.39
-    shadow-radius: 5.30px
-    elevation: 13
-
+    border-top-color: rgba(255,255,255,0.2)
+    border-top-width: 0.5px
 `
 
 const NavItem = styled.TouchableOpacity`

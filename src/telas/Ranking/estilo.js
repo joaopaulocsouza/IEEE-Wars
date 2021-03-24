@@ -5,7 +5,7 @@ import {StyleSheet} from 'react-native'
 export const Container = styled.SafeAreaView` 
     justify-content: center;
     align-items: center;
-    flex:1
+    flex: 1
     background-color: #211f1c
 `;
 
@@ -13,7 +13,7 @@ export const RankingContainer = styled.View`
     background-color: #2B2824
     height: 200px
     width: 90%
-    border-radius: 10px
+    border-radius: 40px
     margin: 10px
     shadow-color: #000
     shadow-opacity: 0.39
@@ -25,7 +25,6 @@ export const RankingContainer = styled.View`
 export const Direita = styled.View`
     width: 55%
     height: 100%
-    padding: 10px
     align-items: center
 `
 
@@ -37,7 +36,9 @@ export const Esquerda = styled.View`
 `
 
 export const RankingTitulo = styled.Text`
-    color: #dcdcdc
+    color: #959595
+    font-weight: 700
+    font-size: 25px
 `
 
 export const BtnVerCompleto = styled.TouchableOpacity`
@@ -47,26 +48,27 @@ export const BtnVerCompleto = styled.TouchableOpacity`
     border-radius: 20px
     align-items: center
     justify-content: center
-    margin-top: 100px
+    margin-top: 55px
 `
 
 export const BtnText = styled.Text`
     color: #dcdcdc
 `
 
-export const Tabela = styled.View`
-    height: 100%
-    width: 100%
-    background-color: #211f1c
+export const TabelaBox = styled.View`
+    height: 50px
+    width: 90%
+    background-color: rgba(30,30,30,0.9)
     border-radius: 10px
     justify-content: center
-    align-items: center
+    margin-bottom: 10px
 `
 
 export const TabelaItem = styled.Text`
     color: #dcdcdc
     margin-top: 10px
     margin-bottom: 5px
+    padding-left: 20px
 `
 
 export const Traco = styled.View`

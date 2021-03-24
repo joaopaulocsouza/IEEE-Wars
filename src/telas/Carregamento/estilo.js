@@ -5,9 +5,9 @@ export const Container = styled.SafeAreaView`
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: #B81F00;
+    background-color: #211F1C;
 `;
 
-export const LoadingIcon = styled.ActivityIndicator`
-    margin-top: 50px
+export const IconeCarregamento = styled.ActivityIndicator`
+
 `

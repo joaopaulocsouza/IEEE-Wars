@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { Text, View } from 'react-native'
-import { Container } from './estilo';
+import { Container, IconeCarregamento } from './estilo';
 import Logo from '../../assets/Logo.svg'
 import AsyncStorage from '@react-native-community/async-storage'
 import { useNavigation } from '@react-navigation/native';
@@ -25,7 +25,7 @@ export default () => {
 
     return(
         <Container>
-            <Logo width="200" height="200"/>
+            <IconeCarregamento size="large" color="#dcdcdc"/>
         </Container>
     )
 

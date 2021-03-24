@@ -15,7 +15,6 @@ export default () => {
 
     return(
         <Container style={{marginTop:0}}>
-            <Navbar Nome={"Pics Enviado"}/>
 
             <Success height="50px" width="50px" fill="green" style={{marginBottom: 20}} />
             <Titulo>Seu Pics foi enviado com sucesso!</Titulo>

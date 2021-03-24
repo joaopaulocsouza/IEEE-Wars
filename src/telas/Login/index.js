@@ -34,17 +34,15 @@ export default () => {
     }
 
     const botaoEntrarAtivo = () =>{
-        if(recebeUser === '' && recebeSenha === ''){
+        if(recebeUser === '' || recebeSenha === ''){
             alert('Preencha os campos')
         }else{
             if(recebeUser == 'Juomzin' && recebeSenha == '10'){
                 navegacao.reset({
-                    routes: [{name: 'Inicio'}]
+                    routes: [{name: 'NavBottom'}]
                 })
             }else{
-                this.setState = ({
-                    ver: 1
-                });
+                alert('Usuário não encotrado')
             }
         }
     }

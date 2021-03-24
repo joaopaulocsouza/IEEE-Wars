@@ -1,5 +1,5 @@
 import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
+import { createStackNavigator, CardStyleInterpolators  } from '@react-navigation/stack'
 
 import Carregamento from '../telas/Carregamento'
 import Login from '../telas/Login'
@@ -14,15 +14,17 @@ import RankingProjetos from '../telas/Ranking/RankingProjeto'
 import EnviarPics from '../telas/Pics/enviar'
 import mensagemSucessoPics from '../telas/Pics/enviar/mensagemSucesso'
 import NavPics from '../telas/Pics/historico/NavPics'
+import Creditos from '../telas/Creditos'
+
 
 const Stack = createStackNavigator();
 
 export default () => (
     <Stack.Navigator
         initialRouteName="Carregamento"
-        screenOptions={{headerShown: false}}
+        screenOptions={{headerShown: false,}}
     >
-        <Stack.Screen name="Carregamento" component={Carregamento} />
+        <Stack.Screen name="Carregamento" component={Carregamento}/>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Cadastro" component={Cadastro} />
         <Stack.Screen name="Recuperar" component={Recuperar} />
@@ -35,6 +37,7 @@ export default () => (
         <Stack.Screen name="EnviarPics" component={EnviarPics} />
         <Stack.Screen name="mensagemSucessoPics" component={mensagemSucessoPics} />
         <Stack.Screen name="NavPics" component={NavPics} />
+        <Stack.Screen name="Creditos" component={Creditos} />
         
     </Stack.Navigator>
     

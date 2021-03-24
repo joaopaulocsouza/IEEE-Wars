@@ -29,6 +29,7 @@ export default () => {
         <Container >
             <Navbar Nome="Histórico"/>
             <FlatList
+                showsVerticalScrollIndicator={false}
                 style={{marginTop: 60}}
                 data={dados}
                 renderItem={(obj) => {
@@ -36,11 +37,11 @@ export default () => {
                     <ContentBox>
                         <Topo>
                             <Dados>
-                                <DadosTitulo>Origem </DadosTitulo>
+                                <DadosTitulo>Origem: </DadosTitulo>
                                 <DadosDado>{obj.item.Origem}</DadosDado>
                             </Dados>
                             <Dados>
-                                <DadosTitulo>Valor </DadosTitulo>
+                                <DadosTitulo>Valor: </DadosTitulo>
                                 <DadosDado>${obj.item.valor}</DadosDado>
                             </Dados>
                         </Topo>

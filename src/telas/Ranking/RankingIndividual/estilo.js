@@ -56,5 +56,6 @@ export const Titulos = styled.View`
 
 export const PosicaoView = styled.View`
     flex-direction: row
+    padding-top: 5px
     justify-content: center
 `

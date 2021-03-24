@@ -50,8 +50,64 @@ export const PiquisText = styled.Text`
 `
 
 export const TopContent = styled.View`
-    height: 100px
+    height: 60px
     width: 100%
     justify-content: space-around
     flex-direction: row
+`
+
+export const StoreContent = styled.ScrollView`
+    width: 100%
+`
+
+export const Box = styled.View`
+    width: 100%
+    padding: 2%
+    justify-content: space-between
+    flex-direction: row
+`
+
+export const CaixaMaior = styled.TouchableOpacity`
+    height: 200px
+    width: 48%
+    background-color: #312E2A
+    border-radius: 10px
+    shadowColor: #000
+    shadowRadius: 4.65px
+    elevation: 8
+    shadowOpacity: 0.30
+    justify-content: flex-end
+    align-items: center
+`
+
+export const CaixaFull = styled.TouchableOpacity`
+    height: 120px
+    width: 100%
+    background-color: #312E2A
+    border-radius: 10px
+    shadowColor: #000
+    shadowRadius: 4.65px
+    elevation: 8
+    justify-content: flex-end
+    align-items: center
+    shadowOpacity: 0.30
+`
+
+export const Titulo = styled.Text`
+    color: #dcdcdc
+    font-weight: 100
+`
+
+export const Valor = styled.Text`
+    color: #dcdcdc
+    font-weight: bold
+    margin: 5px
+`
+
+export const BarraRaridade = styled.View`
+    width: 100%
+    background-color: #E9C401
+    height: 15px
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
 `

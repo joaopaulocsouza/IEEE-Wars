@@ -11,7 +11,8 @@ export const ContentBox = styled.View`
 `
 export const Topo = styled.View`
     flex-direction: row
-    justify-content: space-evenly
+    justify-content: space-between
+    padding: 10px
 `
 export const DadosTitulo = styled.Text`
     color: #dcdcdc

@@ -2,9 +2,10 @@ import React from 'react';
 import { Container, ContentBox, Titulo, ChaveInput, Box, Btn, UserTitle, ContentBoxUser, TituloSaldo, SaldoText, Saldo, BoxDados, BtnText} from './estilo'
 import Navbar from '../../../components/navbar'
 import LinearGradient from 'react-native-linear-gradient'
-import { StyleSheet, View, ScrollView } from 'react-native'
+import { StyleSheet, View, ScrollView, Text } from 'react-native'
 import { useNavigation } from '@react-navigation/core';
 import { useState } from 'react';
+import { Modal } from '../../../components/modal';
 
 
 const userDados = {Nick: 'pdrinTryHard', Saldo: 1000, Martricula: 1234567, Nome: 'Joao Pereira Silva'}
@@ -29,10 +30,10 @@ export default () => {
                         navegacao.navigate('mensagemSucessoPics')
                     }
                 }else{
-                    alert("tipo de valor não permitido! tente novamente"+recebeValor)
+                    alert("tipo de valor não permitido! tente novamente "+recebeValor)
                 }
             }else{
-                alert('Chave nao encontrada')
+                alert("Chave não localizada! ")
             }
         }
     }
@@ -52,7 +53,7 @@ export default () => {
                     </ContentBox>
                     <ContentBox>
                         <Titulo>Descrição</Titulo>
-                        <ChaveInput numberOfLines={3} placeholderTextColor="rgba(220,220,220,0.5)" placeholder="insira a descrição" maxLength={40} value={recebeDescricao} onChangeText={t=>setDescricao(t)}/>
+                        <ChaveInput placeholderTextColor="rgba(220,220,220,0.5)" placeholder="insira a descrição" maxLength={40} value={recebeDescricao} onChangeText={t=>setDescricao(t)}/>
                     </ContentBox>
                     <Btn onPress={btnAtivo}>
                         <LinearGradient colors={['#FBBA37', '#F66E4E']} style={styles.Degrade} start={{ x: 0.7, y: 0 }}>

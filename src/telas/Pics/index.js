@@ -11,7 +11,7 @@ import LinearGradient from 'react-native-linear-gradient'
 import { StyleSheet, View, ScrollView } from 'react-native'
 import { useNavigation } from '@react-navigation/core';
 
-const userDados = {Nick: 'pdrinTryHard', Saldo: 1000, Martricula: 1234567, Nome: 'Joao Pereira Silva'}
+const userDados = {Nick: 'pdrinTryHard', Saldo: 1000, Martricula: 1234567, Nome: 'Fulano Default'}
 
 export default () => {
     const navegacao = useNavigation()
